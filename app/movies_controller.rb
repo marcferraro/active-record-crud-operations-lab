@@ -76,8 +76,8 @@ end
 
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
-  Movie.create(title: "Wat?")
-  movie = Movie.find_by(title: "Wat?")
+  movie = Movie.create(title: "Wat?")
+  #movie = Movie.find_by(title: "Wat?")
   movie.update(title: "Wat, huh?")
 end
 
@@ -92,8 +92,8 @@ def can_update_multiple_items_at_once
 end
 
 def can_destroy_a_single_item
-  Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
-  movie = Movie.find_by(title: "That One Where the Guy Kicks Another Guy Once")
+  movie = Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
+  #movie = Movie.find_by(title: "That One Where the Guy Kicks Another Guy Once")
   movie.destroy
 end
 
